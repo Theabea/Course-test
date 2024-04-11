@@ -3,7 +3,137 @@ body {
     color: fff;
     background-color:#010000;
     font-family: Oxygen;
-
+    margin: 4px;
 
 }
 
+/*HEADER */
+#header-nav {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 0;
+    margin: 4px;
+    box-shadow: #393939;
+}
+
+#logo-img {
+    background: url('logo-img.jpg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+}
+
+.navbar-brand h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #0f0f0f;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+
+}
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7 em;
+    margin-top: 15px;
+}
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon {
+    border: solid #000;
+    color: #000;
+}
+
+.card {
+    border-radius: 10px;
+    border: 0;
+    height: 100vh;
+
+    /* margin: 8px; */
+    border: 0;
+}
+
+.container {
+    margin: 4px;
+}
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.col-xs-3 {
+    padding: 4px;
+}
+
+.col-xs-6 {
+    padding: 4px;
+}
+
+.left {
+    padding: 4px;
+    margin: 4px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: #393939;
+    height: 100vh;
+}
+
+.middle {
+    padding: 4px;
+    margin: 4px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: #393939;
+}
+
+.right {
+    padding: 4px;
+    margin: 4px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: #393939;
+    height: 100vh;
+}
+
+.login-box-fluid {
+    padding: 8px;
+    margin: 8px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    border: 0;
+    height: 100vh;
+    display: flex; /* Gør containeren til en flekscontainer */
+    justify-content: center; /* Centrerer indholdet vandret */
+    align-items: center; /* Centrerer indholdet lodret */
+}
+
+.login {
+    padding: 8px;
+    margin: 8px;
+    background-color: #000;
+    border-radius: 20px;
+    border: 0;
+}
+
+.rover-name {
+    color: #ffffff;
+    padding: 8px;
+    margin: 8px;
+}
+
+#login-container-fluid {
+    background: url('moon.jpg');
+    background-repeat: no-repeat;
+}
