@@ -1,0 +1,44 @@
+body {
+    background-image: url('moon.jpg'); /* Stien til dit billede */
+    background-size: cover; /* Skaler billedet, så det dækker hele baggrundens område */
+    background-position: center; /* Centrer billedet på baggrunden */
+    background-attachment: fixed; /* Gør baggrundsbilledet fast, så det ikke scroller med indholdet */
+}
+
+.login-box-fluid {
+    padding: 8px;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 0;
+    height: 100vh;
+    display: flex; /* Gør containeren til en flekscontainer */
+    justify-content: center; /* Centrerer indholdet vandret */
+    align-items: center; /* Centrerer indholdet lodret */
+    flex-direction: column;
+}
+
+.login {
+    padding: 8px;
+    margin: 8px;
+    background-color: #000;
+    border-radius: 20px;
+    border: 0;
+    
+}
+
+.rover-name {
+    color: #ffffff;
+    font-size: 24px;
+    padding: 8px;
+    margin: 8px;
+}
+
+#rover-img {
+    background: url('rover.png');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+}
+
