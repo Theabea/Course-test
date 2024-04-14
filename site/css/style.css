@@ -106,34 +106,3 @@ body {
     box-shadow: #393939;
     height: 100vh;
 }
-
-.login-box-fluid {
-    padding: 8px;
-    margin: 8px;
-    background-color: #2b2b2b;
-    border-radius: 10px;
-    border: 0;
-    height: 100vh;
-    display: flex; /* Gør containeren til en flekscontainer */
-    justify-content: center; /* Centrerer indholdet vandret */
-    align-items: center; /* Centrerer indholdet lodret */
-}
-
-.login {
-    padding: 8px;
-    margin: 8px;
-    background-color: #000;
-    border-radius: 20px;
-    border: 0;
-}
-
-.rover-name {
-    color: #ffffff;
-    padding: 8px;
-    margin: 8px;
-}
-
-#login-container-fluid {
-    background: url('moon.jpg');
-    background-repeat: no-repeat;
-}
