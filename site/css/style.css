@@ -1,52 +1,55 @@
 body {
     font-size: 16px;
     color: fff;
-    background-color:#010000;
+    background: rgb(0, 0, 0);
+    /*background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 10, 20) 49%, rgb(0, 10, 30) 100%);*/
     font-family: Oxygen;
     margin: 4px;
+    overflow: hidden;
 
 }
 
 /*HEADER */
 #header-nav {
-    background-color: #2b2b2b;
-    border-radius: 10px;
     border: 0;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-right: 12px;
     margin-left: 12px;
-    box-shadow: #393939;
+    padding: 0px;
+    
 }
 
 #logo-img {
     background: url('logo-img.jpg');
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
     margin: 8px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .navbar-brand h1 {
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1.6em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #0f0f0f;
     text-align: center;
+    padding: 4px;
     margin: 0;
     margin-left: 8px;
     line-height: .75;
+    text-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
-
 }
+
 .navbar-brand p {
     color: #000;
     text-transform: uppercase;
     font-size: .7 em;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 .navbar-brand p span {
     vertical-align: middle;
@@ -62,7 +65,6 @@ body {
 }
 
 #nav-list a {
-    color: white;
     text-align: center;
 }
 
@@ -76,26 +78,27 @@ body {
 }
 
 .card {
-    border-radius: 10px;
     border: 0;
     height: 100vh;
-
-    /* margin: 8px; */
     border: 0;
+    padding: 0px;
+    background-repeat: no-repeat;
 }
 
 
 .container-fluid {
-    margin: 4px;
-    padding: 4px;
+    margin: 8px;
+    padding: 8px;
+    background-color: transparent;
 }
 
 .row-container-fluid {
-    margin: 4px;
-    padding: 4px;
+    margin: 8px;
+    padding: 8px;
+    background-color: #000;
 }
 
-.row {
+#row {
     margin: 0px;
 }
 
@@ -108,27 +111,131 @@ body {
 }
 
 .left {
-    margin: 4px;
-    background-color: #2b2b2b;
+    margin: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 0;
-    box-shadow: #393939;
-    height: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 85vh;
 }
 
-.middle {
-    margin: 4px;
-    background-color: #2b2b2b;
+.upper {
+    margin: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 0;
-    box-shadow: #393939;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100px; /* Set height to the desired value */
+}
+
+.upper-frames {
+    display: flex;
+    gap: 10px; /* Adjust the gap between iframes as needed */
+    justify-content: left;
+    align-items: center;
+    margin: 8px;
+    overflow: hidden;
+}
+
+.upper-frames video {
+    width: 80%; /* Set width to the desired value */
+    height: 80px; /* Set height to the desired value */
+    border-radius: 10px; /* Add rounded corners to iframes */
+}
+
+.middle-frame {
+    margin: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.middle-frame video {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.bottom {
+    margin: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right {
-    margin: 4px;
-    background-color: #2b2b2b;
+    margin: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 0;
-    box-shadow: #393939;
-    height: 100vh;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 85vh;
+}
+
+.navbar-brand img {
+    height: 24px;
+    /* put value of image height as your need */
+    float: left;
+    margin-right: 7px;
+  }
+
+  .btn-secondary {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 179, 255);
+    
+  }
+
+  .dropdown-menu {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .dropdown-item {
+    color:#ffffff;
+  }
+
+/*Start button*/
+.start {
+    background-color: green;
+    color: white;
+}
+.stop {
+    background-color: red;
+    color: white;
 }

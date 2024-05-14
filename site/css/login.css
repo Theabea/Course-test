@@ -8,7 +8,9 @@ body {
 .login-box-fluid {
     padding: 8px;
     margin: 8px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     border-radius: 10px;
     border: 0;
     height: 100vh;
@@ -18,14 +20,34 @@ body {
     flex-direction: column;
 }
 
-.login {
-    padding: 8px;
-    margin: 8px;
-    background-color: #000;
-    border-radius: 20px;
-    border: 0;
-    
+button {
+    background-color: #000000;   
+        color:#ccc;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+        border-radius: 20px;
+        box-sizing: border-box;
 }
+
+  
+
+input[type=text], input[type=password] {   
+    background-color: #000;  
+    color: #ccc;
+    font-weight: bold;
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    border: 1px solid rgb(0, 179, 255);
+    border-radius: 20px;   
+    box-sizing: border-box;   
+} 
+
+button:hover {   
+    opacity: 0.7;   
+} 
+
 
 .rover-name {
     color: #ffffff;
@@ -34,11 +56,14 @@ body {
     margin: 8px;
 }
 
-#rover-img {
-    background: url('rover.png');
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+.login-box-fluid img {
+    height: 200px;
+    /* put value of image height as your need */
+    float: left;
+    margin: 8px;
+  }
+
+  .rover-img:hover img {
+    transform: scale(1.1); /* Increase size on hover */
     margin: 8px;
 }
-
