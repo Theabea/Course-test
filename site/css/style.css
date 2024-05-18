@@ -112,6 +112,7 @@ body {
 
 .left {
     margin: 8px;
+    padding: 8px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -171,8 +172,6 @@ body {
     height: 100%;
 }
 
-
-
 .bottom {
     margin: 8px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -184,10 +183,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .right {
     margin: 8px;
+    padding: 8px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -212,9 +213,10 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     font-weight: bold;
+    font-size: 1.5em;
     text-transform: uppercase;
     color: rgb(0, 179, 255);
-    
+    width: 100%;
   }
 
   .dropdown-menu {
@@ -224,18 +226,113 @@ body {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 100%;
   }
-
+  
   .dropdown-item {
     color:#ffffff;
   }
 
 /*Start button*/
 .start {
-    background-color: green;
-    color: white;
+    background: linear-gradient(135deg, rgb(213, 255, 200), rgb(27, 122, 33));
+    display: inline-block;
 }
 .stop {
-    background-color: red;
+    background: linear-gradient(135deg, rgb(255, 200, 200), rgb(122, 27, 27));
+    display: none;
+}
+
+/* TIMER */
+
+.timer {
+    font-size: 24px;
+  }
+
+.start, .stop {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 100%; /* Fills the width of the container */
+    font-size: 1.5em; /* Makes the font size twice as big */
+  }
+
+  .timer, .start, .stop, #mission {
+    margin: 10px auto; /* Adjust the margin as needed */
+    color: white;
+    text-transform: uppercase;
+}
+
+#mission {
+    color: rgb(0, 179, 255);
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    backdrop-filter: blur(8px); /* Apply blur effect */
+}
+
+.modal-content {
+    background-color: #000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(0, 179, 255);
+    width: 50%;
+    text-align: center;
     color: white;
 }
+
+/* Dropdown */
+.dropdown {
+    margin-bottom: 10px;
+}
+
+/* Button */
+.mission-button {
+    padding: 8px;
+    display: block;
+    margin: 10px auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 179, 255);
+    display: inline-block;
+    width: 30%; /* Adjust the width as needed */
+}
+
+#timer {
+    width: 225px;          /* Adjust the width */
+    height: 225px;         /* Adjust the height to match width for a perfect circle */
+    border-radius: 50%;    /* Make the div a circle */
+    background: #000000;   /* Background color of the circle */
+    border: 5px solid rgb(0, 179, 255); /* Border of the circle */
+    display: flex;         /* Use flexbox to center the text */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center;   /* Vertically center the text */
+    font-size: 26px;       /* Font size of the timer text */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font family */
+    color: #ffffffa6;           /* Text color */
+    margin: 20px auto;     /* Center the circle horizontally on the page */
+    text-align: center;     /* Center the text */
+    position:relative;
+    transition: border 0.1s linear;
+}
+
+
+
