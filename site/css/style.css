@@ -235,11 +235,11 @@ body {
 
 /*Start button*/
 .start {
-    background: linear-gradient(135deg, rgb(213, 255, 200), rgb(27, 122, 33));
+    background: linear-gradient(135deg, rgb(230, 247, 255), rgb(0, 179, 255));
     display: inline-block;
 }
 .stop {
-    background: linear-gradient(135deg, rgb(255, 200, 200), rgb(122, 27, 27));
+    background: linear-gradient(135deg, rgb(135, 135, 135), rgb(34, 34, 34));
     display: none;
 }
 
@@ -250,6 +250,8 @@ body {
   }
 
 .start, .stop {
+    font-weight: bold;
+    padding: 8px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -332,6 +334,42 @@ body {
     text-align: center;     /* Center the text */
     position:relative;
     transition: border 0.1s linear;
+}
+
+.box {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    margin-top: 16px;
+    color: rgb(0, 179, 255);
+    font-size: 1em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff71;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.text {
+    color: white;
+    font-size: 2em;
+    flex-grow: 1;
+}
+
+.val {
+    color: white;
+    font-size: 0.75em;
+}
+
+#savedTimesContainer {
+    color: white;
+    text-transform: uppercase;
 }
 
 
