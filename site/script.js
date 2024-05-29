@@ -114,13 +114,6 @@ window.onload = function() {
     modal.style.display = "block";
 }
 
-// Function to close the modal when clicking outside the modal content
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 //VIDEOS
 // Function to display a selected video in the main video player
 function displayVideo(videoSrc) {

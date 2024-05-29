@@ -122,6 +122,7 @@ body {
     height: 85vh;
 }
 
+
 .upper {
     margin: 8px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -184,6 +185,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 218px;
 }
 
 .right {
