@@ -59,10 +59,8 @@ function saveCurrentTime() {
     if (mission !== '') {
         savedTimes.push({ mission: mission, time: currentTime });
 
-        // Create a new entry for the saved time
         var newEntry = ' ' + mission + ': ' + currentTime + '<br>';
 
-        // Get the div element and append the new entry to its inner HTML
         document.getElementById('savedTimesContainer').innerHTML += newEntry;
 
         console.log('Saved Times:', savedTimes);
@@ -121,6 +119,9 @@ function displayVideo(videoSrc) {
     middleVideo.src = videoSrc; // Set the src of middle video to the clicked video src
     middleVideo.play(); // Play the middle video
 }
+
+
+
 
 
 

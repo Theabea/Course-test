@@ -75,7 +75,7 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Left column containing mission selection and timer -->
-            <div class="col-3 card bg-transparent">
+            <div class="col-lg-3 col-12 card bg-transparent">
                 <div class="left">
                     <!-- Section for selecting a mission -->
                     <h2 class="heading" id="completionTime"><Main>MISSION</Main></h2>
@@ -105,7 +105,7 @@
             </div>
 
             <!-- Middle column containing video frames and data display -->
-            <div class="col-6 card bg-transparent">
+            <div class="col-lg-6 col-12 card bg-transparent">
                 <div class="upper">
                     <!-- Upper section with video frames -->
                     <div class="upper-frames">
@@ -150,10 +150,30 @@
                         </p>
                     </div>
                 </div>
+                <div class="bottom d-lg-none">
+                    <div class="box">
+                        <h2 class="heading"><Main>TEMPERATURE</Main></h2>
+                        <p class="text">12
+                            <span class="val">&deg;C</span>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h2 class="heading"><Main>GRAVITY</Main></h2>
+                        <p class="text">1.62
+                            <span class="val">m/s&sup2;</span>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h2 class="heading">POWER</h2>
+                        <p class="text">-54.14
+                            <span class="val">&deg;</span>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!-- Right column containing additional rover data -->
-            <div class="col-3 card bg-transparent">
+            <div class="col-lg-3 col-12 card bg-transparent d-none d-lg-block">
                 <div class="right">
                     <h2 class="heading"><Main>TEMPERATURE</Main></h2>
                     <p class="text">12
@@ -177,7 +197,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
