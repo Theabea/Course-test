@@ -10,24 +10,25 @@ var minutes = 0;
 var mission = ''; // To store the current mission name
 var savedTimes =[]; // Array to save times for different missions
 
+function counter() {
+    milliseconds++;
+    // If milliseconds reach 100, increment seconds and reset milliseconds
+    if (milliseconds >= 100) {
+        milliseconds = 0;
+        seconds++;
+    }
+    // If seconds reach 60, increment minutes and reset seconds
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+    }
+    // Display the formatted time
+    document.getElementById('timer').innerText = formatTime(minutes, seconds, milliseconds);
+}
+
 // Function to start the timer
 function startTimer() {
-    // Set the interval to update the timer every 10 milliseconds
-    timerInterval = setInterval(function() {
-        milliseconds++;
-        // If milliseconds reach 100, increment seconds and reset milliseconds
-        if (milliseconds >= 100) {
-            milliseconds = 0;
-            seconds++;
-        }
-        // If seconds reach 60, increment minutes and reset seconds
-        if (seconds >= 60) {
-            seconds = 0;
-            minutes++;
-        }
-        // Display the formatted time
-        document.getElementById('timer').innerText = formatTime(minutes, seconds, milliseconds);
-    }, 10);
+    timerInterval = setInterval(counter, 10);
     
     // Hide the start button and show the stop button
     document.getElementById('startButton').style.display = 'none';
@@ -83,18 +84,18 @@ function pad(number, isMilliseconds = false) {
 
 /* START BUTTON */
 // Function to toggle the start/stop button state
-function toggleButton() {
-    var button = document.getElementById('toggleButton');
-    if (button.classList.contains('start')) {
-        button.classList.remove('start');
-        button.classList.add('stop');
-        button.innerHTML = 'Stop';
-    } else {
-        button.classList.remove('stop');
-        button.classList.add('start');
-        button.innerHTML = 'Start';
-    }
-}
+// function toggleButton() {
+//     var button = document.getElementById('toggleButton');
+//     if (button.classList.contains('start')) {
+//         button.classList.remove('start');
+//         button.classList.add('stop');
+//         button.innerHTML = 'Stop';
+//     } else {
+//         button.classList.remove('stop');
+//         button.classList.add('start');
+//         button.innerHTML = 'Start';
+//     }
+// }
 
 // MISSION
 // Function to change the selected mission

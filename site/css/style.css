@@ -154,6 +154,10 @@ html, body {
     border-radius: 10px; /* Add rounded corners to iframes */
 }
 
+.upper-frames video:hover {
+    opacity: 0.7;
+}
+
 .middle-frame {
     margin: 8px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -247,16 +251,35 @@ html, body {
 .start {
     background: linear-gradient(135deg, rgb(230, 247, 255), rgb(0, 179, 255));
     display: inline-block;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
+
+.start:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, rgb(230, 247, 255), rgb(143, 221, 255));
+}
+
 .stop {
     background: linear-gradient(135deg, rgb(135, 135, 135), rgb(34, 34, 34));
     display: none;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.stop:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
 }
 
 /* TIMER */
 
 .timer {
-    font-size: 24px;
+    font-size: 26px;
+    color: white;
   }
 
 .start, .stop {
@@ -332,14 +355,14 @@ html, body {
     width: 200px;          /* Adjust the width */
     height: 200px;         /* Adjust the height to match width for a perfect circle */
     border-radius: 50%;    /* Make the div a circle */
-    background: #000000;   /* Background color of the circle */
+    background: transparent;   /* Background color of the circle */
     border: 5px solid rgb(0, 179, 255); /* Border of the circle */
     display: flex;         /* Use flexbox to center the text */
     justify-content: center; /* Horizontally center the text */
     align-items: center;   /* Vertically center the text */
     font-size: 26px;       /* Font size of the timer text */
     font-family: 'Courier New', Courier, monospace; /* Monospaced font family */
-    color: #ffffffa6;           /* Text color */
+    color: white;           /* Text color */
     margin: 20px auto;     /* Center the circle horizontally on the page */
     text-align: center;     /* Center the text */
     position:relative;
